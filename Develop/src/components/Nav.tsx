@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-  // TODO: Add necessary code to display the navigation bar and link between the pages
+// DONE: Add necessary code to display the navigation bar and link between the pages
 const Nav = () => {
   return (
     <nav>
