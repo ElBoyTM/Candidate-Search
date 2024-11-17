@@ -19,7 +19,7 @@ const CandidateSearch = () => {
   }, []);
 
   const fetchCandidateDetails = async (candidate: Candidate) => {
-    const detailedCandidate = await searchGithubUser(candidate.username);
+    const detailedCandidate = await searchGithubUser(candidate.login);
     setCurrentCandidate(detailedCandidate);
   };
 
@@ -32,17 +32,17 @@ const CandidateSearch = () => {
   };
 
   const handleSaveCandidate = () => {
-    // Save the candidate logic here
     handleNextCandidate();
   };
 
+  console.log('currentCandidate', currentCandidate ? currentCandidate.name : 'No candidate');
   return (
     <div>
       {currentCandidate ? (
         <div>
-          <img src={currentCandidate.avatar} alt={currentCandidate.name} />
+          <img src={currentCandidate.avatar_url} alt={currentCandidate.name} />
           <h2>{currentCandidate.name}</h2>
-          <p>{currentCandidate.username}</p>
+          <p>{currentCandidate.login}</p>
           <p>{currentCandidate.location}</p>
           <p>{currentCandidate.email}</p>
           <a href={currentCandidate.html_url}>Profile</a>
