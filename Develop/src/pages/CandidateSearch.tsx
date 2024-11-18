@@ -32,6 +32,10 @@ const CandidateSearch = () => {
   };
 
   const handleSaveCandidate = () => {
+    const savedCandidates = JSON.parse(localStorage.getItem('savedCandidates') || '[]');
+    savedCandidates.push(currentCandidate);
+    localStorage.setItem('savedCandidates', JSON.stringify(savedCandidates));
+
     handleNextCandidate();
   };
 
