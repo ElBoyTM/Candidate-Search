@@ -98,6 +98,8 @@ tbody tr:nth-child(odd) {
   display: flex;
   justify-content: flex-start;
   padding: 1em 2em;
+  width: 100vw;
+  margin-left: 2em;
 }
 
 .nav-item {
