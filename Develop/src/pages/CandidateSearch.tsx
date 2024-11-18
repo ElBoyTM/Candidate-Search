@@ -35,7 +35,6 @@ const CandidateSearch = () => {
     handleNextCandidate();
   };
 
-  console.log('currentCandidate', currentCandidate ? currentCandidate.name : 'No candidate');
   return (
     <div>
       {currentCandidate ? (
