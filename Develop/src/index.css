@@ -120,3 +120,9 @@ tbody tr:nth-child(odd) {
   width: 80vw;
   table-layout: fixed;
 }
+
+.currentCandidate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
