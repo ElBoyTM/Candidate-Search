@@ -44,8 +44,8 @@ const CandidateSearch = () => {
       {currentCandidate ? (
         <div className='currentCandidate'>
           <img src={currentCandidate.avatar_url} alt={currentCandidate.name} />
-          <h2>{currentCandidate.name}</h2>
-          <p>{currentCandidate.login}</p>
+          <p>{currentCandidate.name}</p>
+          <h2>{currentCandidate.login}</h2>
           <p>{currentCandidate.location}</p>
           <p>{currentCandidate.email}</p>
           <a href={currentCandidate.html_url}>Profile</a>
