@@ -50,8 +50,10 @@ const CandidateSearch = () => {
           <p>{currentCandidate.email}</p>
           <a href={currentCandidate.html_url}>Profile</a>
           <p>{currentCandidate.company}</p>
-          <button onClick={handleSaveCandidate}>+</button>
-          <button onClick={handleNextCandidate}>-</button>
+          <div className='buttons'>
+            <button onClick={handleNextCandidate}>-</button>
+            <button onClick={handleSaveCandidate}>+</button>
+          </div>
         </div>
       ) : (
         <p>No more candidates available</p>
